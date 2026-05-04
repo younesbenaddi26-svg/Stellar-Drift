@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stellar Drift | Relaxing Space Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">🌌</span>
+        <span class="logo-text">STELLAR DRIFT</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#sounds">Sounds</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h1>Drift Through <span>The Cosmos</span></h1>
+      <p>A relaxing journey through nebulas, galaxies, and the quiet beauty of space</p>
+      <button class="btn btn-primary" id="playAmbient">▶ Play Space Ambience</button>
+      <audio id="ambientAudio" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </section>
+
+  <section class="journey" id="journey">
+    <div class="container">
+      <h2 class="section-title">Your Cosmic Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Mercury</h3>
+            <p>The swift planet. A year lasts just 88 Earth days. Temperatures swing from -173°C to 427°C.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Venus</h3>
+            <p>Earth's toxic twin. Shrouded in clouds of sulfuric acid with crushing pressure.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Earth</h3>
+            <p>The pale blue dot. Our only home, for now. 71% covered in life-giving water.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Mars</h3>
+            <p>The red planet. Home to the tallest volcano in the solar system: Olympus Mons.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Jupiter</h3>
+            <p>King of planets. Its Great Red Spot is a storm larger than Earth, raging for 400+ years.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Saturn</h3>
+            <p>Lord of the rings. Its rings are made of ice and rock, some as small as dust.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Voyager 1</h3>
+            <p>Now 15+ billion miles away. Carrying a golden record of Earth into interstellar space.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Cosmic Gallery</h2>
+      <p class="section-subtitle">Click any image to view in full</p>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800" alt="Andromeda Galaxy" data-caption="Andromeda Galaxy - 2.5 million light years away">
+        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800" alt="Pillars of Creation" data-caption="Pillars of Creation in the Eagle Nebula">
+        <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=800" alt="Earth from space" data-caption="Earth - The Pale Blue Dot">
+        <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=800" alt="Mars" data-caption="Mars - The Red Planet">
+        <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?w=800" alt="Moon" data-caption="Luna - Our faithful companion">
+        <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=800" alt="Saturn" data-caption="Saturn and its magnificent rings">
+      </div>
+    </div>
+  </section>
+
+  <section class="sounds" id="sounds">
+    <div class="container">
+      <h2 class="section-title">Sounds of Space</h2>
+      <div class="sound-grid">
+        <div class="sound-card" data-sound="https://cdn.pixabay.com/download/audio/2021/08/04/audio_12b0c7443c.mp3">
+          <h3>🌌 Deep Space Drone</h3>
+          <p>The quiet hum of the void</p>
+          <button class="play-btn">▶</button>
+        </div>
+        <div class="sound-card" data-sound="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5e7a6e1e0b.mp3">
+          <h3>🛰️ Satellite Beeps</h3>
+          <p>Pulses from orbit</p>
+          <button class="play-btn">▶</button>
+        </div>
+        <div class="sound-card" data-sound="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3">
+          <h3>✨ Cosmic Winds</h3>
+          <p>Solar particles in motion</p>
+          <button class="play-btn">▶</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightboxImg" src="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        <p>Made for space dreamers, stargazers, and cosmic wanderers.</p>
+        <p>&copy; 2026 Stellar Drift. Images from Unsplash.</p>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/" target="_blank" class="social-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
