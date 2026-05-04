@@ -8,7 +8,7 @@ playAmbientBtn.addEventListener('click', () => {
     ambientAudio.pause();
     playAmbientBtn.textContent = '▶ Play Space Ambience';
   } else {
-    ambientAudio.play();
+    ambientAudio.play(); 
     playAmbientBtn.textContent = '⏸ Pause Ambience';
   }
   isPlaying = !isPlaying;
