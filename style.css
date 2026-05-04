@@ -71,6 +71,58 @@ h1, h2, h3 {
   animation: move-twink-back 300s linear infinite;
 }
 
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.particles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, var(--star-white), transparent),
+    radial-gradient(2px 2px at 40px 70px, var(--accent), transparent),
+    radial-gradient(1px 1px at 90px 40px, var(--star-white), transparent),
+    radial-gradient(1px 1px at 130px 80px, var(--accent), transparent),
+    radial-gradient(2px 2px at 160px 30px, var(--star-white), transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+.shooting-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.shooting-stars::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -5%;
+  width: 5px;
+  height: 5px;
+  background: var(--star-white);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--star-white);
+  animation: shooting-star 8s linear infinite;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -354,6 +406,56 @@ section {
   color: var(--star-white);
 }
 
+/* Space Facts */
+.facts {
+  padding: 100px 0;
+  background: linear-gradient(135deg, rgba(27, 31, 59, 0.3) 0%, rgba(11, 13, 23, 0.5) 100%);
+}
+
+.facts-container {
+  display: flex;
+  justify-content: center;
+}
+
+.fact-card {
+  background: rgba(27, 31, 59, 0.8);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.fact-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.fact-card h3 {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.fact-card p {
+  color: var(--gray);
+  margin-bottom: 30px;
+  line-height: 1.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-secondary {
+  background: var(--accent);
+  color: var(--space-black);
+  border: 2px solid var(--accent);
+}
+
+.btn-secondary:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
 /* Footer */
 .footer {
   background: rgba(0, 0, 0, 0.8);
@@ -367,6 +469,31 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.nasa-contact {
+  text-align: center;
+  color: var(--gray);
+}
+
+.nasa-contact h4 {
+  color: var(--accent);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.nasa-contact p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.nasa-contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.nasa-contact a:hover {
+  text-decoration: underline;
 }
 
 .footer-text p {
@@ -423,6 +550,32 @@ section {
   }
 }
 
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) translateY(50vh);
+    opacity: 0;
+  }
+}
+
 @media (max-width: 768px) {
  .hero-content h1 {
     font-size: 2.5rem;
@@ -447,5 +600,13 @@ section {
  .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+
+ .fact-card {
+    padding: 30px 20px;
+  }
+
+ .fact-card p {
+    font-size: 0.9rem;
   }
 }
